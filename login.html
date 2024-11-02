@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+    <link href="bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="Images/icon.ico" />
+    <link rel="stylesheet" href="css/login.css">
+</head>
+
+<body style="background-color: powderblue;">
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="registration.html">Registration</a>
+        <a class="active" href="#">Login</a>
+        <a href="movieclips.html">Movie Clips</a>
+        <a href="blog.html">Blog</a>
+        <a href="feedback.html">Feedback</a>
+        <a href="aboutus.html">About Us</a>
+    </div>
+
+    <div class="jumbotron header" style="background-image:url('Images/banner 5.jpg');
+            background-repeat:no-repeat;
+            background-size: cover;">
+    </div>
+
+    <div class="row">
+        <div class="col-sm-1"></div>
+        <div class="col-sm-4">
+            <img class="img-rounded" src="Images/banner 1.jpg" height="500px" width="500px">
+        </div>
+        <div class="col-sm-7">
+            <form name="myForm" onsubmit="return(validate());" class="form-horizontal" style="padding-top:120px">
+                <center><h2 style="color:blue; font-family: 'Times New Roman';">Login</h2></center><br>
+                <div class="form-group">
+                    <label class="col-sm-offset-2 control-label col-sm-2" for="email">Email Id : </label>
+                    <div class="col-sm-5">
+                        <input type="text" class="form-control" name="EMail" id="email" placeholder="enter your email address" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-offset-2 control-label col-sm-2" for="password">Password : </label>
+                    <div class="col-sm-5">
+                        <input type="password" class="form-control" name="pwdd" id="password" maxlength="8" placeholder="enter your password">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-offset-4">
+                        <div class="checkbox">
+                            <label><input type="checkbox">Remember me</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-offset-4">
+                        <button type="submit" class="btn btn-success">Login</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <br>
+
+    <div class="container-fluid footer text-center">
+        <h5 style="color:white">Made By Akhilesh Yadav</h5>
+    </div><br>
+
+    <script src="js/login.js"></script>
+</body>
+</html>

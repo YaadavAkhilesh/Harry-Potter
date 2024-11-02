@@ -1,0 +1,30 @@
+.header {
+    background: teal;
+    height: 540px;
+}
+.footer {
+    background: teal;
+}
+.navbar {
+    width: 100%;
+    background-color: #000;
+    overflow: auto;
+}
+.navbar a {
+    float: left;
+    color: white;
+    padding: 15px;
+    font-size: 17px;
+    border-radius: 84px;
+}
+.navbar a:hover {
+    background-color: #555;
+}
+.active {
+    background: green;
+}
+.search-container {
+    float:right;
+    margin-right: 15px;
+    margin-top:15px;
+}

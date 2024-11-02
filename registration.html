@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration</title>
+    <link href="bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="Images/icon.ico" />
+    <link rel="stylesheet" href="css/registration.css">
+</head>
+
+<body style="background-color: powderblue;">
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a class="active" href="#">Registration</a>
+        <a href="login.html">Login</a>
+        <a href="movieclips.html">Movie Clips</a>
+        <a href="blog.html">Blog</a>
+        <a href="feedback.html">Feedback</a>
+        <a href="aboutus.html">About Us</a>
+    </div>
+
+    <div class="jumbotron header" style="background-image:url('Images/banner 5.jpg');
+        background-repeat:no-repeat;
+        background-size: cover;">
+    </div>
+
+    <div class="container">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-8">
+            <h2 class="text-center" style="font-family: 'Times New Roman';">Register</h2><br>
+            <form name="myForm" class="form-horizontal" onsubmit="return(validate());">
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="fname">First Name : </label>
+                    <div class="col-sm-10">
+                        <input class="form-control" type="text" name="ffname" id="fname" placeholder="First Name">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="lname">Last Name : </label>
+                    <div class="col-sm-10">
+                        <input class="form-control" type="text" name="llname" id="lname" placeholder="Last Name">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="pwd">Password : </label>
+                    <div class="col-sm-10">
+                        <input class="form-control" type="password" name="pwdd" id="pwd" placeholder="Enter Password"
+                            maxlength="8">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="pwd1">Confirm Password : </label>
+                    <div class="col-sm-10">
+                        <input class="form-control" type="password" name="pwdd1" id="pwd1"
+                            placeholder="Enter Password Again" maxlength="8">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="taadd">Address : </label>
+                    <div class="col-sm-10">
+                        <textarea class="form-control" id="taadd" placeholder="Enter your address"></textarea>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="course">Course : </label>
+                    <div class="col-sm-10">
+                        <div class="form-control">
+                            <input name="course" type="radio" value="BCA">BCA
+                            <input name="course" type="radio" value="BBA">BBA
+                            <input name="course" type="radio" value="B.Com">B.Com
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-2">Hobbies : </label>
+                    <div class="col-sm-10">
+                        <div class="form-control">
+                            <input name="hobby1" type="checkbox" value="insta">Watching Harry Potter
+                            <input name="hobby2" type="checkbox" value="yt">Youtube
+                            <input name="hobby3" type="checkbox" value="bgmi">PUBG / BGMI
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-2">State : </label>
+                    <div class="col-sm-10">
+                        <div class="form-control">
+                            <select name="state" class="col-sm-12">
+                                <option value="-1" selected>-- Select State --</option>
+                                <option value="up">Uttar Pradesh</option>
+                                <option value="mp">Madhya Pradesh</option>
+                                <option value="jharkhand">Jharkhand</option>
+                                <option value="gujarat">Gujarat</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="dob">Date of Birth : </label>
+                    <div class="col-sm-10">
+                        <input class="form-control" type="date" id="dob">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="emailadd">Email Id : </label>
+                    <div class="col-sm-10">
+                        <input class="form-control" type="email" id="emailadd" placeholder="Enter your email address">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="mno">Mobile No : </label>
+                    <div class="col-sm-10">
+                        <input class="form-control" type="text" name="mobno" id="mno" maxlength="10"
+                            placeholder="Enter your mobile number">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="fuphoto">Select Your Photo : </label>
+                    <div class="col-sm-10">
+                        <input class="form-control" type="file" id="fuphoto">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+                        <button type="submit" class="btn btn-success">Submit</button>
+                        <button type="reset" class="btn btn-danger">Reset</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="col-sm-2"></div><br><br>
+
+    <div class="container-fluid footer text-center">
+        <h5 style="color:white">Made By Akhilesh Yadav</h5>
+    </div><br>
+
+    <script src="js/registration.js"></script>
+</body>
+
+</html>

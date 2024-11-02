@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Feedback</title>
+    <link href="bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="Images/icon.ico" />
+    <link rel="stylesheet" href="css/feedback.css">
+</head>
+
+<body style="background-color: powderblue;">
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="registration.html">Registration</a>
+        <a href="login.html">Login</a>
+        <a href="movieclips.html">Movie Clips</a>
+        <a href="blog.html">Blog</a>
+        <a class="active" href="#">Feedback</a>
+        <a href="aboutus.html">About Us</a>
+
+        <div class="search-container">
+            <form action="/action-page.php">
+                <input type="text" placeholder="Search..." name="search">
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="jumbotron header" style="background-image:url('Images/banner 5.jpg');
+        background-repeat:no-repeat;
+        background-size: cover;">
+    </div><br>
+
+    <div class="container-fluid">
+        <h2 style="color:red; font-family: 'Times New Roman';">Got a Question ?</h2>
+        <div class="col-sm-12">
+            <form>
+                <div class="form-group">
+                    <label class="control-label" for="user">Username : </label>
+                    <input class="form-control" id="user" type="text">
+                </div>
+                <div class="form-group">
+                    <label class="control-label" for="email">Email : </label>
+                    <input class="form-control" id="email" type="text">
+                </div>
+                <div class="form-group">
+                    <label class="control-label" for="user">Question : </label>
+                    <textarea class="form-control" id="user" type="text"></textarea>
+                </div>
+                <div class="form-group">
+                    <div>
+                        <label><input type="checkbox"/>Remember me</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-success">Submit</button>
+                    <button type="reset" class="btn btn-danger">Reset</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="container-fluid footer text-center">
+        <h5 style="color:white">Made By Akhilesh Yadav</h5>
+    </div><br>
+</body>
+</html>
