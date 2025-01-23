@@ -1,42 +1,159 @@
-.header {
-    background: teal;
-    height: 540px;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
+
+body {
+    background-color: powderblue;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    width: 100%;
+    height: 540px;
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin-bottom: 20px;
+    background: teal;
+}
+
 .footer {
     background: teal;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding: 15px 0;
 }
+
 .navbar {
     width: 100%;
     background-color: #000;
     overflow: auto;
 }
+
 .navbar a {
     float: left;
     color: white;
     padding: 15px;
     font-size: 17px;
     border-radius: 84px;
+    text-decoration: none;
 }
+
 .navbar a:hover {
     background-color: #555;
 }
+
 .active {
     background: green;
 }
+
 .search-container {
     float: right;
     margin-right: 15px;
     margin-top: 15px;
 }
+
+.search-container input[type="text"] {
+    padding: 6px;
+    border-radius: 4px;
+    border: none;
+}
+
+.search-container button {
+    padding: 6px 12px;
+    border-radius: 4px;
+    border: none;
+    background: green;
+    color: white;
+    cursor: pointer;
+}
+
 h2, h3 {
     font-family: Times New Roman;
     margin: 20px;
 }
+
 p {
     font-size: 17px;
     text-align: justify;
     margin: 20px;
+    line-height: 1.6;
 }
+
 .myh2 {
     text-align: left;
+}
+
+/* Image Grid Styling */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+    margin-bottom: 80px;
+}
+
+.col-sm-4 {
+    padding: 15px;
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+    box-sizing: border-box;
+}
+
+.img-rounded {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .header {
+        height: 400px;
+    }
+    
+    .col-sm-4 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    
+    .img-rounded {
+        width: 250px;
+        height: 250px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .header {
+        height: 300px;
+    }
+    
+    .col-sm-4 {
+        flex: 0 0 100%;
+        max-width: 100%;
+        text-align: center;
+    }
+    
+    .img-rounded {
+        width: 200px;
+        height: 200px;
+    }
+    
+    .navbar a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+    
+    .search-container {
+        float: none;
+        width: 100%;
+        text-align: center;
+        margin: 10px 0;
+    }
 }

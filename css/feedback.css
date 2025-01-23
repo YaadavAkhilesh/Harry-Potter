@@ -1,9 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: powderblue;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
 .header {
     background: teal;
     height: 540px;
 }
 .footer {
     background: teal;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding: 15px 0;
 }
 .navbar {
     width: 100%;
@@ -27,4 +44,8 @@
     float:right;
     margin-right: 15px;
     margin-top:15px;
+}
+
+.container {
+    margin-bottom: 80px;
 }
